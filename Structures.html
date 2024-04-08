@@ -4,120 +4,119 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Staying Off the Hook</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="sidebar">
         <ul>
             <li><a href="index.html">Overview</a></li>
             <li><a href="Structures.html">Common Attack Structures</a></li>
-            <li><a href="#Vulnerabilities">Vulnerabilities</a></li>
-            <!-- Add more list items for additional sections -->
+            <li><a href="Vulnerabilities.html">Vulnerabilities</a></li>
         </ul>
     </div>
 
     <div class="content">
         <h1 id="Structures">Structures</h1>
         <p>To understand how to avoid phishing attacks, it can be helpful to understand exactly how these attacks work. 
-This section will provide a brief overview of the structure of a phishing attack. Phishing attacks are composed of three
-primary components: a medium, a vector, and a technical approach. An attack’s medium is the platform on which a phishing
-attack will be delivered. Examples of significant mediums used by phishing attacks are the Internet, SMS, and the phone
-calls. An attack’s vector is the channel of its medium that it uses. For instance, an attack based on the medium of the 
-Internet could use email or social media sites as its channel. Finally, an attack’s technical approach 
+        This section will provide a brief overview of the structure of a phishing attack. Phishing attacks are composed of three
+        primary components: a medium, a vector, and a technical approach. An attack’s medium is the platform on which a phishing
+        attack will be delivered. Examples of significant mediums used by phishing attacks are the Internet, SMS, and the phone
+        calls. An attack’s vector is the channel of its medium that it uses. For instance, an attack based on the medium of the 
+        Internet could use email or social media sites as its channel. Finally, an attack’s technical approach 
 
-Though phishing attacks are often thought of as being exclusively conducted over email, the attack methodologies have 
-evolved over the years and adapted to a variety of mediums, vectors, and technical approaches. The following section 
-describes how these attacks are carried out in each of these mediums and the common vectors that said attacks will take. 
-Countermeasures (steps that can be taken to avoid phishing attacks) for attacks from each medium can be found here 
-(link to countermeasures page), and elaboration on some commonly used technical approaches can be found <a href="Structures.html">here</a>.</p>
+        Though phishing attacks are often thought of as being exclusively conducted over email, the attack methodologies have 
+        evolved over the years and adapted to a variety of mediums, vectors, and technical approaches. The following section 
+        describes how these attacks are carried out in each of these mediums and the common vectors that said attacks will take. 
+        Countermeasures (steps that can be taken to avoid phishing attacks) for attacks from each medium can be found here 
+        (link to countermeasures page), and elaboration on some commonly used technical approaches can be found <a href="Structures.html">here</a>.</p>
 
-<h2 id ="Internet">Internet</h2>
+        <h2 id ="Internet">Internet</h2>
 
-<h3 id ="Email">Email</h3>
+        <h3 id ="Email">Email</h3>
 
-<p>When you think of a phishing attack, it's likely that the first concept that comes to mind is that of a fraudulent email.
-Email phishing has existed for significantly longer than many other phishing vectors, and has become one of the 
-most well-known types of online scams. According to a review of common phishing approaches by Kang Leng Chiew, Furkan Alaca,
- and Sonia Chiasson in the International Journal of Human-Computer Studies, the standard structure of an email-based phishing
-attack involves the attacker creating an email to send with the target with two primary objectives. The first is that the 
-email is intended to convince its receiver that it is from a legitimate corporation or trusted individual. The second is that 
-the email aims to coerce the receiver into performing a certain task, which can range from clicking a link that leads to a 
-malicious website to directly sending money to a fraudulent bank account. <p>
+        <p>When you think of a phishing attack, it's likely that the first concept that comes to mind is that of a fraudulent email.
+        Email phishing has existed for significantly longer than many other phishing vectors, and has become one of the 
+        most well-known types of online scams. According to a review of common phishing approaches by Kang Leng Chiew, Furkan Alaca,
+         and Sonia Chiasson in the International Journal of Human-Computer Studies, the standard structure of an email-based phishing
+        attack involves the attacker creating an email to send with the target with two primary objectives. The first is that the 
+        email is intended to convince its receiver that it is from a legitimate corporation or trusted individual. The second is that 
+        the email aims to coerce the receiver into performing a certain task, which can range from clicking a link that leads to a 
+        malicious website to directly sending money to a fraudulent bank account. <p>
 
-<h3 id ="Social Media">Social Media</h3>
+        <h3 id ="Social Media">Social Media</h3>
 
-<p>Another, perhaps more relevant Internet-based vector that can be used by modern phishing attacks is social networking 
-sites such as Facebook, Twitter, or Instagram. Part of what makes these sites potential assets for attackers is the large 
-amount of personal information that these sites store about their users. Abdul Ali discusses this issue in his paper, 
-“Social Engineering: Phishing Latest and Future Techniques”, noting that attackers use data-crawling platforms like 
-PromptCloud to extract specific information from social networking sites’ large exceptionally large databases (Abdul). 
-The information can then be used to impersonate or otherwise violate the privacy of their targets. For instance, a common 
-form of phishing attack on social media is for the attacker to either gain control of someone’s social media account or 
-create a new social media account designed to appear as if it belongs to someone the attacker's target knows. The attacker 
-will then message the target using this account in an attempt to manipulate the target’s trust in the person being 
-impersonated in order to convince them to reveal personal or private information.<p>
+        <p>Another, perhaps more relevant Internet-based vector that can be used by modern phishing attacks is social networking 
+        sites such as Facebook, Twitter, or Instagram. Part of what makes these sites potential assets for attackers is the large 
+        amount of personal information that these sites store about their users. Abdul Ali discusses this issue in his paper, 
+        “Social Engineering: Phishing Latest and Future Techniques”, noting that attackers use data-crawling platforms like 
+        PromptCloud to extract specific information from social networking sites’ large exceptionally large databases (Abdul). 
+        The information can then be used to impersonate or otherwise violate the privacy of their targets. For instance, a common 
+        form of phishing attack on social media is for the attacker to either gain control of someone’s social media account or 
+        create a new social media account designed to appear as if it belongs to someone the attacker's target knows. The attacker 
+        will then message the target using this account in an attempt to manipulate the target’s trust in the person being 
+        impersonated in order to convince them to reveal personal or private information.<p>
 
-<h3 id ="Websites">Websites</h3>
-
-<p>A concept that is distinct from the manipulation of existing legitimate sites such as social networking sites is the 
-creation of malicious sites that are meant to impersonate legitimate sites. According to “A survey of phishing attacks: 
-Their types, vectors and technical approaches”, malicious sites will often be designed to appear as similar as possible 
-to legitimate login pages for sites that require credentials to log into accounts. The malicious sites will prompt 
-users to enter their credentials, which will then be delivered to the attacker rather than validated by the legitimate 
-site as the user expected. Generally speaking, users tend to find this type of attack to be more difficult to detect 
-without use of a detection tool than attacks that use vectors such as email.</p>
-
-<h2 id ="Short Messaging Service (SMS)">Short Messaging Service (SMS)</h2>
-
-<h2 id ="Voice">Voice</h2>
-
-<p>Phishing attacks that occur over a phone call are known as voice phishing (or “vhishing”) attacks. Voice phishing attacks
-are carried out in the same way as phishing attacks, but use phone calls rather than emails, ads, or instant messages to 
-reach their targets. In recent years, the development of voice phishing apps and other tools that are available to hackers 
-has raised the threat of this type of phishing attack considerably, as these tools provide several functionalities that 
-make it possible for attackers to create convincing fraudulent phone calls. </p>
-
-<h3 id ="Voice Phishing Apps">Voice Phishing Apps</h3>
-
-<p>One of the most common tools used by attackers in vhishing attacks are vhishing apps, which are fraudulent apps that will 
-allow the attacker to perform various functions on the target’s device. The first step an attacker takes in an attack 
-utilizing one of these apps is to get the target to download the app, usually by masquerading the app as some type of 
-financial application. According to a study by the Korea Advanced Institute of Science & Technology (Kim et al), 81% of a 
-sample of 1,017 voice phishing apps were pretending to be banking apps. After the target has downloaded the app, the attacker
-will try to get the target to make a call to the number of a legitimate financial institution, at which point the voice phishing 
-app can perform one of its true functions in order to complete the execution of the attack. A few of these apps’ common 
-capabilities are also described in the study by KAIST, including the following:</p>
-
-<h4 id ="Outgoing Call Redirection">I. Outgoing Call Redirection</h4>
-
-<p>Voice phishing apps will often have the ability to reroute outgoing calls from its home device. The attack’s target may 
-dial the number of a legitimate financial institution, such as their bank, but have their call rerouted to a number of the 
-attacker’s choice without their knowledge. This allows the attacker to collect information from the target under the convincing 
-pretense that they are representing the bank or other financial institution. </p>
-
-<h4 id ="Call Screen Overlays">II. Call Screen Overlays</h4>
-
-<p>This function is quite similar to call redirection, though it does not actually reroute an outgoing call. Instead, a voice 
-phishing app may overlay the device’s authentic phone screen with a fake one, typically depicting a different phone number 
-than the one that the target is actually calling or being called by. One advantage that this provides attackers over call 
-redirection is that it can be used to falsify the identity of a call recipient or a caller, meaning it can be used for incoming 
-and outgoing calls. </p>
-
-<h4 id ="Fake Voice Recordings">III. Fake Voice Recordings</h4>
-
-<p>This is a feature of many voice phishing apps that works in conjunction with call redirection. Once a call from a target is 
-redirected, attackers may not want to risk having a personal conversation with the target to try to extract information, as this 
-can sometimes lead to suspicion and thus to the attack’s failure. Instead, attackers may redirect a call to a number that will 
-automatically play a recorded message that asks for the attacker’s desired information from the target, typically asserting that it 
-is necessary for them to receive the information in order to carry out some sort of financial function. </p>
-
-<h2 id ="Other Tools">Other Tools</h2>
-
-<p>It is also worth noting that many vhishing scams may not even require the target to download a fraudulent app to be successful. 
-For instance, another significant tool that can increase the probability of success for a vhishing attack is the use of deepfake technology 
-to create an approximation of someone’s voice. By accessing voice samples stored by a social network service (SNS), an attacker can create a 
-deepfake synthetic voice that can sound relatively indistinct from someone’s real voice. (Kang et al) The attacker can then use this synthetic 
-voice to make a phone call to a target that will seem to be from a friend or family member.</p>
+        <h3 id ="Websites">Websites</h3>
+        
+        <p>A concept that is distinct from the manipulation of existing legitimate sites such as social networking sites is the 
+        creation of malicious sites that are meant to impersonate legitimate sites. According to “A survey of phishing attacks: 
+        Their types, vectors and technical approaches”, malicious sites will often be designed to appear as similar as possible 
+        to legitimate login pages for sites that require credentials to log into accounts. The malicious sites will prompt 
+        users to enter their credentials, which will then be delivered to the attacker rather than validated by the legitimate 
+        site as the user expected. Generally speaking, users tend to find this type of attack to be more difficult to detect 
+        without use of a detection tool than attacks that use vectors such as email.</p>
+        
+        <h2 id ="Short Messaging Service (SMS)">Short Messaging Service (SMS)</h2>
+        
+        <h2 id ="Voice">Voice</h2>
+        
+        <p>Phishing attacks that occur over a phone call are known as voice phishing (or “vhishing”) attacks. Voice phishing attacks
+        are carried out in the same way as phishing attacks, but use phone calls rather than emails, ads, or instant messages to 
+        reach their targets. In recent years, the development of voice phishing apps and other tools that are available to hackers 
+        has raised the threat of this type of phishing attack considerably, as these tools provide several functionalities that 
+        make it possible for attackers to create convincing fraudulent phone calls. </p>
+        
+        <h3 id ="Voice Phishing Apps">Voice Phishing Apps</h3>
+        
+        <p>One of the most common tools used by attackers in vhishing attacks are vhishing apps, which are fraudulent apps that will 
+        allow the attacker to perform various functions on the target’s device. The first step an attacker takes in an attack 
+        utilizing one of these apps is to get the target to download the app, usually by masquerading the app as some type of 
+        financial application. According to a study by the Korea Advanced Institute of Science & Technology (Kim et al), 81% of a 
+        sample of 1,017 voice phishing apps were pretending to be banking apps. After the target has downloaded the app, the attacker
+        will try to get the target to make a call to the number of a legitimate financial institution, at which point the voice phishing 
+        app can perform one of its true functions in order to complete the execution of the attack. A few of these apps’ common 
+        capabilities are also described in the study by KAIST, including the following:</p>
+        
+        <h4 id ="Outgoing Call Redirection">I. Outgoing Call Redirection</h4>
+        
+        <p>Voice phishing apps will often have the ability to reroute outgoing calls from its home device. The attack’s target may 
+        dial the number of a legitimate financial institution, such as their bank, but have their call rerouted to a number of the 
+        attacker’s choice without their knowledge. This allows the attacker to collect information from the target under the convincing 
+        pretense that they are representing the bank or other financial institution. </p>
+        
+        <h4 id ="Call Screen Overlays">II. Call Screen Overlays</h4>
+        
+        <p>This function is quite similar to call redirection, though it does not actually reroute an outgoing call. Instead, a voice 
+        phishing app may overlay the device’s authentic phone screen with a fake one, typically depicting a different phone number 
+        than the one that the target is actually calling or being called by. One advantage that this provides attackers over call 
+        redirection is that it can be used to falsify the identity of a call recipient or a caller, meaning it can be used for incoming 
+        and outgoing calls. </p>
+        
+        <h4 id ="Fake Voice Recordings">III. Fake Voice Recordings</h4>
+        
+        <p>This is a feature of many voice phishing apps that works in conjunction with call redirection. Once a call from a target is 
+        redirected, attackers may not want to risk having a personal conversation with the target to try to extract information, as this 
+        can sometimes lead to suspicion and thus to the attack’s failure. Instead, attackers may redirect a call to a number that will 
+        automatically play a recorded message that asks for the attacker’s desired information from the target, typically asserting that it 
+        is necessary for them to receive the information in order to carry out some sort of financial function. </p>
+        
+        <h2 id ="Other Tools">Other Tools</h2>
+        
+        <p>It is also worth noting that many vhishing scams may not even require the target to download a fraudulent app to be successful. 
+        For instance, another significant tool that can increase the probability of success for a vhishing attack is the use of deepfake technology 
+        to create an approximation of someone’s voice. By accessing voice samples stored by a social network service (SNS), an attacker can create a 
+        deepfake synthetic voice that can sound relatively indistinct from someone’s real voice. (Kang et al) The attacker can then use this synthetic 
+        voice to make a phone call to a target that will seem to be from a friend or family member.</p>
 
         
     </div>
