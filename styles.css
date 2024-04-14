@@ -33,8 +33,13 @@ body {
     padding: 20px;
 }
 
-/* Style for active link */
 .sidebar ul li a.active {
     background-color: #4CAF50;
     color: white;
+
+}
+
+h1 {
+    background-color:  #1e2e78;
+    color: #faf7f7;
 }
