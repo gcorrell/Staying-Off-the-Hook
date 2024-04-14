@@ -52,3 +52,7 @@ h1 {
     margin-left: 0px;
     padding: 30px;
 }
+
+.content body {
+    padding: 20px;
+}
