@@ -7,7 +7,7 @@ body {
 .sidebar {
     width: 200px;
     background-color: #1e2e78;
-    padding: 20px;
+    padding: none;
     box-sizing: border-box;
 }
 
