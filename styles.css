@@ -46,6 +46,7 @@ h1 {
 }
 
 .content h1 {
-    margin-left: 0px; /* Equal to the width of the sidebar + padding */
+    margin-left: 0px;
     padding: 30px;
+    padding-top: 90px;
 }
