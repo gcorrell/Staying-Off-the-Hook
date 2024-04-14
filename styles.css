@@ -42,4 +42,6 @@ body {
 h1 {
     background-color:  #1e2e78;
     color: #faf7f7;
+    padding: 20px;
+    margin: 10px;
 }
