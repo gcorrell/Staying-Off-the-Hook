@@ -5,7 +5,7 @@ body {
 }
 
 .sidebar {
-    width: 220px;
+    width: 200px;
     background-color: #1e2e78;
     padding: 20px;
     box-sizing: border-box;
@@ -42,4 +42,10 @@ body {
 h1 {
     background-color:  #1e2e78;
     color: #faf7f7;
+    margin: 0;
+}
+
+.content h1 {
+    margin-left: 220px; /* Equal to the width of the sidebar + padding */
+    padding: 20px;
 }
