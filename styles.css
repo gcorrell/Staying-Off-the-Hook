@@ -38,14 +38,3 @@ body {
     color: white;
 
 }
-
-h1 {
-    background-color:  #1e2e78;
-    color: #faf7f7;
-    margin: 0;
-}
-
-.content h1 {
-    margin-left: 0px; /* Equal to the width of the sidebar + padding */
-    padding: 20px;
-}
