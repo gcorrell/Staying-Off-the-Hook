@@ -34,6 +34,7 @@ body {
 .content {
     flex: 1;
     padding: 0px 0px;
+    margin: 10px
 }
 
 .sidebar ul li a.active {
@@ -46,13 +47,5 @@ h1 {
     background-color:  #1e2e78;
     color: #faf7f7;
     margin: 10;
-}
-
-.content h1 {
-    margin-left: 0px;
     padding: 30px;
-}
-
-.content body {
-    padding: 20px;
 }
