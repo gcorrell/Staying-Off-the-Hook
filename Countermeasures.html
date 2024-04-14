@@ -13,6 +13,7 @@
             <li><a href="Structures.html">Common Attack Structures</a></li>
             <li><a href="Vulnerabilities.html">Vulnerabilities</a></li>
             <li><a href="Countermeasures.html">Countermeasures</a></li>
+            <li><a href="Consequences.html">Real World Impacts</a></li>
         </ul>
     </div>
 
@@ -50,6 +51,58 @@
         <p>Keeping these sorts of indicators in mind can help you to identify whether or not the website 
         that you’re currently viewing is legitimate and help you to determine whether or not you should trust a site 
         with your information.</p>
+
+        <h2 id="Detection Tools">Detection Tools</h2>
+
+        <p>If you feel that you are a particularly vulnerable target to phishing scams, you may want to 
+        download some phishing attack prevention software, which can often identify signs that an email 
+        or other message is fraudulent that a human may not. While this type of application does exist, 
+        it is important to emphasize that you should exercise caution when downloading anything from 
+        the internet, particularly software that advertises itself as cybersecurity protection software, 
+        as this is a common way for attackers to disguise malware. Below are some examples of existing 
+        or forthcoming anti-phishing software.</p>
+
+        <h3 id="Direct Webpage Content Analysis">Direct Webpage Content Analysis</h3>
+
+        <p>One type of software framework that can be used to detect phishing attacks is a framework 
+        that can be integrated into your browser to directly analyze the legitimacy of the content of 
+        each webpage that the browser visits, making it possible for the system to notify you of potential 
+        scams or malicious content in real time when browsing the web. Such a system was introduced at the 
+        5th International Conference on Network and System Security in 2011 by Sophie Gastellier-Provost. 
+        This system had two primary functions. First, the system detects DNS (domain name system) 
+        compromises at the client-side, delivering the user a pop-up warning message indicating that the 
+        currently displayed site may be illegitimate. Finding said DNS compromises is achieved by doing IP 
+        address checks for web domains that the user visits. Second, the system presents an additional 
+        security indicator in the chrome area (the area surrounding the URL) of the browser that displays 
+        a trust level that the system has in the current site. This trust level is determined by performing 
+        a comparison between the HTML content of the webpage that the browser is currently displaying and 
+        that of a reference webpage that is known to be legitimate. The system achieved a 95% success rate 
+        for identifying potentially fraudulent login webpages, suggesting that this type of detection tool 
+        could be a reasonably reliable form of protection from webpage-based phishing attacks.</p>
+
+        <h3 id="Machine Learning and Classifiers">Machine Learning and Classifiers</h3>
+
+        <p>Another approach to browser-based website phishing detection is to use machine learning models 
+        to develop classifiers that can determine whether or not a site is a phishing site. A system 
+        developed by Samuel Marchal and his team called Off-the-Hook. As opposed to comparing the HTML 
+        content of the website in question directly to a reference webpage, Off-the-Hook uses existing 
+        datasets to extract a feature set that can be used to characterize phishing sites, then the 
+        system then simply determines whether or not the existing site fits this characterization in 
+        order to classify it. This approach circumvents the limitation of requiring an appropriate 
+        reference webpage to compare the current webpage to.</p>
+
+        <h3 id="Deep Voice Detection">Machine Learning and Classifiers</h3>
+
+        <p>As deepfake technology has continued to increase the capabilities of attackers to synthesize 
+        approximations of real peoples’ voices, the need has arisen for software that can successfully 
+        distinguish these faked voices from real voices. Fortunately, recent years have seen the 
+        development of such tools. For instance, in 2022, Yeajun Kang and his team of researchers unveiled 
+        the DeepDetection system, which is capable of detecting deepfaked voices with an F-score 
+        (a measure of predictive accuracy) of 100%. The system functions by extracting meaningful features 
+        of the inputted voice data, then comparing the extracted feature vector to that of a deepfaked 
+        voice in order to classify the input voice data as either a real user’s or a fake (Kang et al.) 
+        The system would be able to be made available to users via their mobile devices, making it accessible 
+        to almost anyone.</p>
         
     </div>
 </body>
