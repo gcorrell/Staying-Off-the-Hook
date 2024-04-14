@@ -51,15 +51,16 @@ h1 {
 }
 h2 {
     margin: 10;
-    padding: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 h3 {
     margin: 10;
-    padding: 30px;
+    padding-left: 30px;
 }
 h4 {
     margin: 10;
-    padding: 30px;
+    padding-left: 30px;
 }
 p {
     margin: 10;
