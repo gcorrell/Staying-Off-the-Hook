@@ -46,7 +46,8 @@ body {
 h1 {
     background-color:  #1e2e78;
     color: #faf7f7;
-    margin: 10;
+    margin-left: 10;
+    margin-top: 0;
     padding: 30px;
 }
 h2 {
