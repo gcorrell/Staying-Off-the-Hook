@@ -45,6 +45,14 @@ body {
     height: 100vh;
   }
 
+.shortcenter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
 .sidebar ul li a.active {
     background-color: #4CAF50;
     color: white;
