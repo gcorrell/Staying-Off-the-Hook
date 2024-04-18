@@ -55,7 +55,18 @@
         the attacker rather than the legitimate site runners. For example, by injecting a client-side script into a legitimate website, an 
         attacker could add a login form to the site that asks for users’ credentials and delivers them to a malicious website rather than to 
         the legitimate one. This is known as a cross-site scripting attack, a type of attack that has a variety of uses both within and beyond 
-        the scope of phishing. </p>
+        the scope of phishing. As an example, an attacker seeking to use this type of approach might enter something like the following line into a form field on a login 
+        page where a user would normally enter a password. </p>
+
+        <div class="center">
+            <img src="Images/HTMLInjectionExample.PNG" 
+                width="400" 
+                height="50"
+                alt="HTML Injection Example">
+                <p>This line, when used as input on an HTML-based site, may be interpreted as a line of the page's source HTML. If so, the line would 
+                create a button on the page that would appear to be a login button, but would actually link to a malicious website. Proper use of input 
+                validation would prevent a user from including special characters in their input, making this line impossible to submit.</p>
+            </div>
 
         <h3 id="Browser/Browser Extension Vulnerabilities">Browser/Browser Extension Vulnerabilities</h3>
         <p>There are a few ways in which attackers can use client-side programming languages like JavaScript to exploit vulnerabilities in a 
