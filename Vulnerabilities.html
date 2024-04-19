@@ -21,7 +21,7 @@
 
     <div class="content">
         <h1 id="Vulnerabilities">Vulnerabilities</h1>
-        <p>The types of vulnerabilities that an attack can exploit can generally be divided into two primary categories: 
+        <p> The types of vulnerabilities that an attack can exploit can generally be divided into two primary categories: 
         system vulnerabilities and human vulnerabilities. System vulnerabilities refers to technical aspects or flaws of 
         the system that the attacker is attempting to compromise that can be manipulated in order to perform an attack. 
         Human vulnerabilities are the ways in which people can be deceived or manipulated into revealing their own private 
@@ -32,7 +32,7 @@
 
         <h2 id="Human Vulnerabilities">Human Vulnerabilities</h2>
         <h3 id="Lack of Technical Knowledge or Awareness">Lack of Technical Knowledge or Awareness</h3>
-        <p>A great number of phishing attacks depend entirely on the victim lacking knowledge about how computers or the 
+        <p> A great number of phishing attacks depend entirely on the victim lacking knowledge about how computers or the 
         internet work. For instance, an attacker may send a potential victim an email claiming to be from Microsoft notifying 
         them that their machine has a virus, and requests payment in order to fix the issue. Though many people in the modern 
         day recognize that this is not a way that Microsoft or any other legitimate software or hardware provider would contact 
@@ -40,7 +40,7 @@
         real and what is fraudulent to be obvious, and may become a victim of the attack. </p>
 
         <h3 id="Trust and Care for Friends and Family Members">Trust and Care for Friends and Family Members</h3>
-        <p>Sometimes, a phishing attack may attempt to make use of a potential victim’s care for their friends or family members 
+        <p> Sometimes, a phishing attack may attempt to make use of a potential victim’s care for their friends or family members 
         to encourage them to interact with a fraudulent email or other message. For instance, an attacker might compose a fraudulent 
         email claiming or appearing to be from the potential victim’s nephew, cousin, or other extended family member, asking for 
         money for some kind of urgent purpose, such as paying bail. These attacks are predicated on the notion that someone will be 
@@ -48,7 +48,7 @@
 
         <h2 id="Technical Vulnerabilities">Technical Vulnerabilities</h2>
         <h3 id="Lack of Input Validation on Websites">Lack of Input Validation on Websites</h3>
-        <p>This vulnerability is particularly relevant to attacks that use the medium of the Internet. Phishing attackers can use a 
+        <p> This vulnerability is particularly relevant to attacks that use the medium of the Internet. Phishing attackers can use a 
         website’s lack of <a href="Terms.html#InputValidation">security indicators</a> to inject malicious code into an existing website in order to try to gather a target’s login 
         credentials or other information. Essentially, a poorly constructed site may fail to disallow users to inject their own <a href="Terms.html#Client-side">client-side</a> 
         scripts to the site, resulting in its contents being changed in order to cause a target user to unknowingly deliver information to 
@@ -65,15 +65,14 @@
                 alt="HTML Injection Example">
         </div>
         
-        <p>This line, when used as input on an HTML-based site, may be interpreted as a line of the page's source HTML. If so, the line would 
+        <p> This line, when used as input on an HTML-based site, may be interpreted as a line of the page's source HTML. If so, the line would 
         create a button on the page that would appear to be a login button, but would actually link to a malicious website. Proper use of input 
         validation would prevent a user from including special characters in their input, making this line impossible to submit.</p>
 
         <h3 id="Browser/Browser Extension Vulnerabilities">Browser/Browser Extension Vulnerabilities</h3>
-        <p>There are a few ways in which attackers can use client-side programming languages like JavaScript to exploit vulnerabilities in a 
+        <p> There are a few ways in which attackers can use client-side programming languages like JavaScript to exploit vulnerabilities in a 
         user’s web browser and its extensions.</p>
-        <br>
-        <p>In some cases, attackers may be capable of injecting a target’s machine with <a href="Terms.html#Malware">malware</a> that can be used to complete the 
+        <p> In some cases, attackers may be capable of injecting a target’s machine with <a href="Terms.html#Malware">malware</a> that can be used to complete the 
         execution of the phishing attack simply by having them visit a malicious website or view a malicious email that manipulates 
         the user’s web browser. The attacker can use JavaScript code embedded in a malicious website/email to cause a user’s browser 
         to automatically download malware onto the user's device when the site or email is viewed. This is known as a drive-by download. 
@@ -81,14 +80,34 @@
         malware meant to help execute phishing attacks can do things like redirect legitimate web addresses to malicious ones or 
         directly record information using tools such as keystroke loggers, which record the keys pressed on the user’s keyboard, 
         revealing their credentials for any site they log into.</p>
-        <br>
-        <p>Attackers can also use JavaScript code to manipulate how a user’s browser displays the information about a webpage. 
+        <p> Attackers can also use JavaScript code to manipulate how a user’s browser displays the information about a webpage. 
         A common version of this type of attack spoofs part of the <a href="Terms.html#ChromeArea">chrome area</a> of a user’s browser window (the chrome area of a 
         browser window appears at the top of the window, and includes the address bar, status bar, toolbar, and menu area above 
         the content area) in order to make the URL for a malicious website look legitimate. Part of this process can even include 
         making <a href="Terms.html#SecurityIndicators">security indicators</a> such as the SSL lock and https portion of the URL appear to be present even when they shouldn’t 
         be. Much like the JavaScript code that allows for the possibility of a drive-by download, the code that changes the appearance 
-        of the chrome area is automatically executed when a user visits the malicious web page.  </p>          
+        of the chrome area is automatically executed when a user visits the malicious web page.  </p>   
+        
+        <h3 id="Session Hijacking">Session Hijacking</h3>
+        <p> Another way that attckers can gain access to sensitive information via technical vulnerabilities is through 
+        the manipulation of <a href="Terms.html#SessionID">session ID</a>. An attacker can gain access to a session ID 
+        via many different methods, as will be discussed in the sections below Once the attacker has the session ID 
+        of the target's active session, they can use it to essentially impersonate the user and take over the active session. 
+        If the target user was currently logged in to a site or was dealing with any kind of sensitive information, the attacker 
+        would then have access to it. The following are a few ways in which attackers can try to access session IDs.
+        </p>
+
+        <h4 id="Sniffing">I. Sniffing</h3>
+        <p>In some cases, phishers may be able to find session ID's by just monitoring the target's <a href="Terms.html#NetworkTraffic">network traffic</a>. 
+        The attacker will "sniff" for <a href="Terms.html#Encryption">unencrypted</a> packets of data that may contain session IDs.</p>
+
+        <h4 id="Brute Force">II. Brute Force</h3>
+            <p>If the attacker is unable to monitor the target's network traffic, they may sometimes resort to brute force. This involves the attacker 
+            trying every possible combination of characters to try to essentially guess a session ID. Naturally, this method can be quite time consuming, 
+            which is a significant disadvantage for this method considering that session keys are only valuable to the attacker while the session is still active. 
+            Of course, the brute force method is rarely carried out manually, instead relyng on an automated system to try the many different character combinations, 
+            which significantly reduces the time that is required to carry out such a task.
+            </p>
     </div>
 </body>
 </html>
