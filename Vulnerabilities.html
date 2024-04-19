@@ -33,8 +33,8 @@
         <h2 id="Human Vulnerabilities">Human Vulnerabilities</h2>
         <h3 id="Lack of Technical Knowledge or Awareness">Lack of Technical Knowledge or Awareness</h3>
         <p> A great number of phishing attacks depend entirely on the victim lacking knowledge about how computers or the 
-        internet work. For instance, an attacker may send a potential victim an email claiming to be from Microsoft notifying 
-        them that their machine has a virus, and requests payment in order to fix the issue. Though many people in the modern 
+        Internet work. For instance, an attacker may send a potential victim an email claiming to be from Microsoft notifying 
+        them that their machine has a virus, and request payment in order to fix the issue. Though many people in the modern 
         day recognize that this is not a way that Microsoft or any other legitimate software or hardware provider would contact 
         you about such an issue, those who have less experience with technology may not find the distinctions between what is 
         real and what is fraudulent to be obvious, and may become a victim of the attack. </p>
@@ -49,12 +49,12 @@
         <h2 id="Technical Vulnerabilities">Technical Vulnerabilities</h2>
         <h3 id="Lack of Input Validation on Websites">Lack of Input Validation on Websites</h3>
         <p> This vulnerability is particularly relevant to attacks that use the medium of the Internet. Phishing attackers can use a 
-        website’s lack of <a href="Terms.html#InputValidation">security indicators</a> to inject malicious code into an existing website in order to try to gather a target’s login 
+        website’s lack of <a href="Terms.html#InputValidation">input validation</a> to inject malicious code into an existing website in order to try to gather a target’s login 
         credentials or other information. Essentially, a poorly constructed site may fail to disallow users to inject their own <a href="Terms.html#Client-side">client-side</a> 
         scripts to the site, resulting in its contents being changed in order to cause a target user to unknowingly deliver information to 
         the attacker rather than the legitimate site runners. For example, by injecting a client-side script into a legitimate website, an 
         attacker could add a login form to the site that asks for users’ credentials and delivers them to a malicious website rather than to 
-        the legitimate one. This is known as a cross-site scripting attack, a type of attack that has a variety of uses both within and beyond 
+        the legitimate one. This is known as a <a href="Terms.html#XSS">cross-site scripting attack</a>, a type of attack that has a variety of uses both within and beyond 
         the scope of phishing. As an example, an attacker seeking to use this type of approach might enter something like the following line into a form field on a login 
         page where a user would normally enter a password. </p>
 
@@ -84,14 +84,14 @@
         A common version of this type of attack spoofs part of the <a href="Terms.html#ChromeArea">chrome area</a> of a user’s browser window (the chrome area of a 
         browser window appears at the top of the window, and includes the address bar, status bar, toolbar, and menu area above 
         the content area) in order to make the URL for a malicious website look legitimate. Part of this process can even include 
-        making <a href="Terms.html#SecurityIndicators">security indicators</a> such as the SSL lock and https portion of the URL appear to be present even when they should not 
+        making <a href="Terms.html#SecurityIndicators">security indicators</a> such as the <a href="Terms.html#SSLLock">SSL lock</a> and https portion of the URL appear to be present even when they should not 
         be. Much like the JavaScript code that allows for the possibility of a drive-by download, the code that changes the appearance 
         of the chrome area is automatically executed when a user visits the malicious web page.  </p>   
         
         <h3 id="Session Hijacking">Session Hijacking</h3>
-        <p> Another way that attckers can gain access to sensitive information via technical vulnerabilities is through 
-        the manipulation of <a href="Terms.html#SessionID">session ID</a>. An attacker can gain access to a session ID 
-        via many different methods, as will be discussed in the sections below Once the attacker has the session ID 
+        <p> Another way that attackers can gain access to sensitive information via technical vulnerabilities is through 
+        the manipulation of the target's <a href="Terms.html#SessionID">session ID</a>. An attacker can gain access to a session ID 
+        via a few different methods, as will be discussed in the sections below. Once the attacker has the session ID 
         of the target's active session, they can use it to essentially impersonate the user and take over the active session. (<a href="Bibliography.html">Baitha, 2018</a>) 
         If the target user was currently logged in to a site or was dealing with any kind of sensitive information, the attacker 
         would then have access to it. The following are a few ways in which attackers can try to access session IDs.
