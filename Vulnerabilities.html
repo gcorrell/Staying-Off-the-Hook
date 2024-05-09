@@ -21,14 +21,13 @@
 
     <div class="content">
         <h1 id="Vulnerabilities">Vulnerabilities</h1>
-        <p> The types of vulnerabilities that an attack can exploit can generally be divided into two primary categories: 
+        <p> The types of vulnerabilities that a cyberattack can exploit can generally be divided into two primary categories: 
         system vulnerabilities and human vulnerabilities. System vulnerabilities refers to technical aspects or flaws of 
         the system that the attacker is attempting to compromise that can be manipulated in order to perform an attack. 
         Human vulnerabilities are the ways in which people can be deceived or manipulated into revealing their own private 
-        information. Phishing attacks generally take advantage of human vulnerabilities as opposed to system vulnerabilities, 
-        though both can play a part in how a phishing attack is executed. The following section will discuss specifics of 
-        the vulnerabilities that make phishing attacks possible, as well as the approaches that attackers use to manipulate 
-        them. </p>
+        information. Phishing attacks generally take advantage of human vulnerabilities as opposed to system vulnerabilities. However, 
+        there exist additional types of attacks that may be used in conjunction with phishing attacks to bolster their effectiveness. The following section will discuss specifics of 
+        the vulnerabilities that make phishing attacks possible, as well how other types of more technical attacks can be used alongside phishing attacks to make them even more dangerous. </p>
 
         <h2 id="Human Vulnerabilities">Human Vulnerabilities</h2>
         <h3 id="Lack of Technical Knowledge or Awareness">Lack of Technical Knowledge or Awareness</h3>
@@ -48,14 +47,15 @@
 
         <h2 id="Technical Vulnerabilities">Technical Vulnerabilities</h2>
         <h3 id="Lack of Input Validation on Websites">Lack of Input Validation on Websites</h3>
-        <p> This vulnerability is particularly relevant to attacks that use the medium of the Internet. Phishing attackers can use a 
+        <p> This vulnerability is particularly relevant to attacks that use the medium of the Internet. Attackers can use a 
         website’s lack of <a href="Terms.html#InputValidation">input validation</a> to inject malicious code into an existing website in order to try to gather a target’s login 
         credentials or other information. Essentially, a poorly constructed site may fail to disallow users to inject their own <a href="Terms.html#Client-side">client-side</a> 
         scripts to the site, resulting in its contents being changed in order to cause a target user to unknowingly deliver information to 
         the attacker rather than the legitimate site runners. For example, by injecting a client-side script into a legitimate website, an 
         attacker could add a login form to the site that asks for users’ credentials and delivers them to a malicious website rather than to 
         the legitimate one. This is known as a <a href="Terms.html#XSS">cross-site scripting attack</a>, a type of attack that has a variety of uses both within and beyond 
-        the scope of phishing. A similar but slightly distinct attack is an HTML injection attack, which follows the same general structure but injects HTML lines as opposed to entire client-side scripts. For example, an attacker seeking to use this type of approach might enter something like the following line into a form field on a login 
+        the scope of phishing. An attacker may use this type of attack in conjunction with a phishing attack by providing a link to a site that has been compromised by a cross-site scripting attack in their 
+        message to their target. A similar but slightly distinct attack is an HTML injection attack, which follows the same general structure but injects HTML lines as opposed to entire client-side scripts. For example, an attacker seeking to use this type of approach might enter something like the following line into a form field on a login 
         page where a user would normally enter a password. </p>
 
         <div class="shortcenter">
@@ -86,7 +86,12 @@
         the content area) in order to make the URL for a malicious website look legitimate. Part of this process can even include 
         making <a href="Terms.html#SecurityIndicators">security indicators</a> such as the <a href="Terms.html#SSLLock">SSL lock</a> and https portion of the URL appear to be present even when they should not 
         be. Much like the JavaScript code that allows for the possibility of a drive-by download, the code that changes the appearance 
-        of the chrome area is automatically executed when a user visits the malicious web page.  </p>   
+        of the chrome area is automatically executed when a user visits the malicious web page. 
+        <p>Like cross-site scripting attacks, attacks that exploit browser vulnerabilities may increase the efficacy of a phishing attack. 
+        For instance, a phishing message may contain a link to a page that has been compromised by one of these attacks. Once the target clicks the link, 
+        the malware that might be installed in an instance of a drive-by download could be the phisher's method of gaining the target's sensitive details. 
+        Alternatively, the spoofed chrome area that might appear on a malicious site due to an attack based on a browser vulnerability could contribute to 
+        building the target's trust in the attacker, thereby making them more likely to reveal their information to them.</p>   
         
         <h3 id="Session Hijacking">Session Hijacking</h3>
         <p> Another way that attackers can gain access to sensitive information via technical vulnerabilities is through 
@@ -94,11 +99,12 @@
         via a few different methods, as will be discussed in the sections below. Once the attacker has the session ID 
         of the target's active session, they can use it to essentially impersonate the user and take over the active session. (<a href="Bibliography.html">Baitha, 2018</a>) 
         If the target user was currently logged in to a site or was dealing with any kind of sensitive information, the attacker 
-        would then have access to it. The following are a few ways in which attackers can try to access session IDs.
+        would then have access to it. In the context of phishing attacks, however, an attacker may use session hijacking to impersonate someone who the attack's target trusts by hijacking said trusted person's active session 
+        on a site with messaging capabilities such as a social networking site and using it to send a phishing message to the phishing attack's target. The following are a few ways in which attackers can try to access session IDs.
         </p>
 
         <h4 id="Sniffing">I. Sniffing</h3>
-        <p>In some cases, phishers may be able to find session ID's by just monitoring the target's <a href="Terms.html#NetworkTraffic">network traffic</a>. 
+        <p>In some cases, attackers may be able to find session ID's by just monitoring the target's <a href="Terms.html#NetworkTraffic">network traffic</a>. 
         The attacker will "sniff" for <a href="Terms.html#Encryption">unencrypted</a> packets of data that may contain session IDs.</p>
 
         <h4 id="Brute Force">II. Brute Force</h3>
